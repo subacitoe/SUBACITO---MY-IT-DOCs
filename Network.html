@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUBACITO - MY IT DOCs</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/bg.jpg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- 
+    - preload images
+  -->
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+    <div class="header-bottom skewBg" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">SUBACITO</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link skewBg" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./SQLserver.html" class="navbar-link skewBg" data-nav-link>SQL server</a>
+            </li>
+
+            <li class="navbar-item nav-link-default">
+              <a href="./Network.html" class="navbar-link skewBg" data-nav-link>NETWORK</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link skewBg" data-nav-link>Blog</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+        <div class="header-actions">
+
+          <button class="cart-btn" aria-label="cart">
+            <span class="mail">✉</span>
+            <span class="cart-badge">1</span>
+          </button>
+
+          <button class="search-btn" aria-label="open search" data-search-toggler="">
+            <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon>
+          </button>
+
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler="">
+            <ion-icon name="menu-outline" class="menu md hydrated" role="img" aria-label="menu outline"></ion-icon>
+            <ion-icon name="close-outline" class="close md hydrated" role="img" aria-label="close outline"></ion-icon>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" aria-label="search" placeholder="Search here..." class="search-field">
+
+      <button class="search-submit" aria-label="submit search" data-search-toggler>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+
+      <button class="search-close" aria-label="close search" data-search-toggler></button>
+    </div>
+
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home" style="background-color:  white;">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <!-- <p class="hero-subtitle" style="color: #1d0eff;">Free IT Docs For Everyone</p> -->
+
+            <h1 class="h1 hero-title" style="color: #1d0eff;">
+              <span class="span">NETWORK</span>
+            </h1>
+
+          </div>
+
+          <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+            <img src="./assets/images/bg.jpg" width="700" height="700" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BRAND
+      -->
+      <section class="path_section section" id="code_table" data-value=10>
+        <h2 class="table_code_bagger">Câu lệnh cơ bản</h2>
+        <div class="table_code_bagger">
+          <h1>Đặt tên thiết bị</h1>
+          <div class="table_code_container">
+            <span>Switch(config)#hostname TenThietBi</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Đặt banner</h1>
+          <div class="table_code_container">
+            <span>Switch(config)#banner motd #Noi dung muon hien thi#</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Đặt mật khẩu Enable</h1>
+          <div class="table_code_container">
+            <span>Switch(config)#enable secret MatKhauMuonDat</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Đặt mật khẩu console</h1>
+          <div class="table_code_container">
+            <span>Switch(config)#line console 0</span>
+            <span>Switch(config-line)#password MatKhauMuonDat</span>
+            <span>Switch(config-line)#login</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Mã hóa mật khẩu</h1>
+          <div class="table_code_container">
+            <span>Switch(config)#service password-encryption</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Lưu cấu hình vào NVRAM</h1>
+          <div class="table_code_container">
+            <span>Switch#wr</span>
+          </div>
+          <h1>Hoặc</h1>
+          <div class="table_code_container">
+            <span>Switch#copy running-config startup-config</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Lưu cấu hình thiết bị về Server</h1>
+          <span>Sử dụng dịch vụ TFTP để lưu cấu hình thiết bị( router, switch,…) về Server</span>
+          <ul>
+            <li><em>Bước 01: mở dịch vụ TFTP trên Server, có thể xóa các file đang có nếu không cần thiết.</em></li>
+            <li><em>Bước 02: Vào thiết bị cần lưu cấu hình, copy cấu hình đang chạy (running-config) về TFPT server bằng lệnh sau:</em>
+              <div class="table_code_container">
+                <span>Router#copy running-config tftp: </span>
+                <span>Address or name of remote host []? ip của server</span>
+                <span>Destination filename [Router-confg]? tên file muốn lưu</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Cấu hình router</h1>
+          <span>💡 ip route [ip người nhận] [subnet mask người nhận] [ip người vận chuyển]</span>
+          <span class="caution-txt">Máy tính gửi đang ở 192.168.1.0/24 muốn gửi gói tin đến 192.168.3.0/24 sẽ nhờ 172.16.1.2(gateway) gửi giúp vì máy tính gửi không biết đường đi đến 192.168.3.0/24.</span>
+          <div class="table_code_container">
+            <span>Router(config)#ip route 192.168.3.0 255.255.255.0 172.16.1.2</span>
+          </div>
+
+          <span>💡 Kiểm tra</span>
+          <div class="table_code_container">
+            <span>Router#Show ip route</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Cấu hình Telnet</h1>
+          <div class="table_code_container">
+            <span>Router(config)#line vty 0 4</span>
+            <span>Router(config-line)#password matkhaumuondat</span>
+            <span>Router(config-line)#login</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Cấu hình SSH</h1>
+          <div class="table_code_container">
+            <span>Router(config)#hostname R1</span>
+            <span>R1(config)#ip domain name span.com</span>
+            <span>R1(config)#crypto key generate rsa general-keys modulus 1024</span>
+            <span>R1(config)#username Bob secret cisco</span>
+            <span>R1(config)#line vty 0 4</span>
+            <span>R1(config-line)#login local</span>
+            <span>R1(config-line)#transport input ssh</span>
+            <span class="caution-txt">Cấu hình SSH trên Router</span>
+          </div>
+        </div>
+        
+        <h2 class="table_code_bagger">Câu lệnh cơ bản 2</h2>
+
+        <div class="table_code_bagger">
+          <h1>Tạo VLAN </h1>
+          <ul>
+            <br>
+            <li><e>Tạo Vlan</e>
+              <div class="table_code_container">
+                <span>Switch(config)#vlan 10</span>
+                <span>Switch(config-vlan)#name KeToan</span>
+              </div></li><br>
+            <li><e>Gán port của switch vào một vlan</e>
+              <div class="table_code_container">
+                <span>Switch(config)#int f0/1</span>
+                <span>Switch(config-if)#switchport mod access</span>
+                <span>Switch(config-if)#switchport access vlan 10</span>
+              </div></li><br>
+            <li><e>Tạo port trunk</e>
+              <span class="caution-txt">Switch layer 2</span>
+              <div class="table_code_container">
+                <span>Switch(config)#int f0/24</span>
+                <span>Switch(config-if)#switchport mod trunk</span>
+              </div><br>
+
+              <span class="caution-txt">Switch layer 3</span>
+              <div class="table_code_container">
+                <span>Switch(config)#int f0/24</span>
+                <span>Switch(config-if)#switchport trunk encapsulation dot1q</span>
+                <span>Switch(config-if)#switchport mod trunk</span>
+              </div>
+            </li><br>
+            <li><e>Kiểm tra</e>
+              <div class="table_code_container">
+                <span>Switch#show vlan</span>
+                <span>Switch#show interface trunk</span>
+              </div></li>
+          </ul>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Tạo DHCP POOL</h1>
+          <br>
+          <span class="caution-txt">Cấu hình các ip sẽ không cấp phát</span>
+          <div class="table_code_container">
+            <span>Switch(config)#ip dhcp excluded-address 192.168.1.1 192.168.1.10</span>
+          </div>
+          <br>
+
+          <h1>Tạo DHCP POOL</h1>
+          <div class="table_code_container">
+            <span>Switch(config)#ip dhcp pool DHCP-KeToan</span>
+            <span>Switch(dhcp-config)#network 192.168.1.0 255.255.255.0</span>
+            <span>Switch(dhcp-config)#default-router 192.168.1.1</span>
+            <span>Switch(dhcp-config)#dns-server 8.8.8.8</span>
+          </div><br>
+
+          <h1>Kiểm tra</h1>
+          <div class="table_code_container">
+            <span>Switch#show ip dhcp pool</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Tạo port trunk trên switch layer 3</h1>
+          <div class="table_code_container">
+            <span>Switch(config)#int f0/24</span>
+            <span>Switch(config-if)#switchport trunk encapsulation dot1q</span>
+            <span>Switch(config-if)#switchport mod trunk</span>
+          </div><br>
+          <h1>Bật chế độ Routing</h1>
+          <div class="table_code_container">
+            <span>Switch(config)#ip routing</span>
+          </div><br>
+          <h1>Kiểm tra routing:</h1>
+          <div class="table_code_container">
+            <span>Switch#Show ip route</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Tạo Sub interface cho Vlan và đặt IP</h1>
+          <div class="table_code_container">
+            <span>Router(config)#int f0/0</span>
+            <span>Router(config-if)#no shutdown</span>
+            <span>Router(config)#int f0/0.1</span>
+            <span>Router(config-subif)#encapsulation dot1Q 10</span>
+            <span>Router(config-subif)#ip address 192.168.1.1 255.255.255.0</span>
+          </div>
+        </div>
+
+        <div class="table_code_bagger">
+          <h1>Access Control Lists (ACLs)</h1>
+          <div class="table_code_container">
+            <span>Router(config)#ip access-list extended TenAcessList</span>
+            <span>Router(config-subif)#deny ip [Source address] [Source wildcard] [Destination address] [Destination wildcard] </span>
+            <span>Router(config-subif)#pemit ip [Source address] [Source wildcard] [Destination address] [Destination wildcard]</span>
+          </div>
+
+          <span class="caution-txt">Ví dụ: Trong vlan 20 không cho các gói tin đến vlan 10 (192.168.10.0/24)</span>
+          <div class="table_code_container">
+            <span>Router(config)#ip access-list extended KhongChoDiDenVlan10</span>
+            <span>Router(config-subif)#deny ip any 192.168.10.0 0.0.0.255 </span>
+            <span>Router(config-subif)#pemit ip any any</span>
+          </div>
+
+          <h1>Áp dụng access list</h1>
+          <div class="table_code_container">
+            <span>Router(config)#int [interface]</span>
+            <span>Router(config-subif)#ip access-group [Access list] [in; out]</span>
+          </div>
+
+          
+          <span  class="caution-txt">Ví dụ</span>
+          <div class="table_code_container">
+            <span>Router(config)#int vlan20</span>
+            <span>Router(config-subif)#ip access-group KhongChoDiDenVlan10 in</span>
+          </div>
+        </div>
+      <section class="section shop" id="shop" aria-label="shop"
+        style="background-image: url('./assets/images/shop-bg.jpg')">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            SUBACITO <span class="span">Corner</span>
+          </h2>
+
+          <p class="section-text">
+            SQLserver
+          </p>
+        </div>
+      </section>
+      <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+
+            <h2 class="h2">
+              CONTACT <span class="span">ME</span>
+            </h2>
+
+            <form action="" class="newsletter-form">
+
+              <div class="input-wrapper skewBg">
+                <input type="email" name="email_address" aria-label="email" placeholder="Enter your email..." required
+                  class="email-field">
+
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <button type="submit" class="btn newsletter-btn skewBg">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">SUBACITO</a>
+
+          <p class="footer-text">
+            Gamics marketplace the relase etras thats sheets continig passag.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+
+              <address class="item-text">
+                Address : PO Box W75 Street lan West new queens
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="headset"></ion-icon>
+              </div>
+
+              <a href="tel:+241245654235" class="item-text">Phone : +24 1245 654 235</a>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="mail-open"></ion-icon>
+              </div>
+
+              <a href="mailto:info@exemple.com" class="item-text">Email : info@exemple.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Products</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Graphics (26)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Backgrounds (11)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fonts (9)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Music (3)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Photography (3)</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Need Help?</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Use Cases</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-wrapper">
+
+          <div class="social-wrapper">
+
+            <p class="footer-list-title">Follow Us</p>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #3b5998">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #55acee">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #d71e18">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #1565c0">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-newsletter">
+
+            <p class="footer-list-title">Newsletter Sign Up</p>
+
+            <form action="" class="footer-newsletter">
+              <input type="email" name="email_address" aria-label="email" placeholder="Enter your email" required
+                class="email-field">
+
+              <button type="submit" class="footer-btn" aria-label="submit">
+                <ion-icon name="rocket"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 All Right Reserved by <a href="#" class="copyright-link">SUBACITO</a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
