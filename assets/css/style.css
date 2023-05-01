@@ -1,18 +1,8 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
+
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2022 SUBACITO
  */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -363,7 +353,7 @@ body {
 }
 
 .logo {
-  color: #E9A401;
+  color: #1d0eff;
   font-family: var(--ff-oxanium);
   font-size: 3rem;
   font-weight: var(--fw-800);
@@ -1198,7 +1188,7 @@ body {
   .cart-badge {
     position: absolute;
     top: 5px;
-    right: -8px;
+    right: -8 px;
     background-color: var(--marigold);
     color: var(--eerie-black-1);
     font-size: var(--fs-11);
@@ -1206,6 +1196,7 @@ body {
     padding: 3px 5px;
     line-height: 1;
     font-weight: var(--fw-800);
+    animation: rubberBand 2s infinite;
   }
 
 
@@ -1730,3 +1721,46 @@ em{
 .mail{
   font-size: 1.5em;
 }
+.cart-badge:hover{
+  -webkit-animation-name: rubberBand;
+          animation-name: rubberBand;
+}
+
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+            transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+            transform: scale3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
