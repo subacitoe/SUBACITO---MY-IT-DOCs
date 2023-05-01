@@ -353,7 +353,7 @@ body {
 }
 
 .logo {
-  color: #1d0eff;
+  color: #E9A401;
   font-family: var(--ff-oxanium);
   font-size: 3rem;
   font-weight: var(--fw-800);
@@ -361,6 +361,7 @@ body {
 
 .header-actions {
   display: flex;
+  position: relative;
   align-items: center;
   gap: 20px;
 }
@@ -1725,31 +1726,34 @@ em{
 .mail_notification{
   position: absolute;
   background-color: rgb(236, 236, 236);
-  width: 300px;
+  width: 400px;
   padding: 20px;
-  top: 80%;
-  right: 15%;
-  border: 1px solid white;
+  top: calc(55% + 10px);
+  right: -100%;
+  border: 1px solid blue;
   border-radius: 5px;
   display: none;
-  animation: slideDown 0.2s ease-in-out;
+  z-index: 1;
 }
 
 .noti_card{
   background-color: #E9A401;
-  color: white;
-  padding: 5px;
-  margin: 5px;
+  color: rgb(242, 242, 242);
   border-radius: 5px;
+  font-size: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+.cart-btn:hover .mail_notification {
+  display: block;
+  animation: slideDown 0.3s ease-in-out;
 }
 
 .noti_header{
   font-weight: bold;
 }
 
-.cart-btn:hover + .mail_notification{
-  display: block;
-}
 
 .cart-badge:hover{
   -webkit-animation-name: rubberBand;
@@ -1757,13 +1761,13 @@ em{
 }
 
 @keyframes slideDown {
-  0% {
-    opacity: 0;
+  from {
     transform: translateY(-20px);
+    opacity: 0;
   }
-  100% {
-    opacity: 1;
+  to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
