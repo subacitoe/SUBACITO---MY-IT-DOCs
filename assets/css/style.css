@@ -1721,9 +1721,50 @@ em{
 .mail{
   font-size: 1.5em;
 }
+
+.mail_notification{
+  position: absolute;
+  background-color: rgb(236, 236, 236);
+  width: 300px;
+  padding: 20px;
+  top: 80%;
+  right: 15%;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: none;
+  animation: slideDown 0.2s ease-in-out;
+}
+
+.noti_card{
+  background-color: #E9A401;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.noti_header{
+  font-weight: bold;
+}
+
+.cart-btn:hover + .mail_notification{
+  display: block;
+}
+
 .cart-badge:hover{
   -webkit-animation-name: rubberBand;
           animation-name: rubberBand;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
