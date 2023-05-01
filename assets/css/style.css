@@ -1,18 +1,8 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
+
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2022 SUBACITO
  */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -363,7 +353,7 @@ body {
 }
 
 .logo {
-  color: #1d0eff;
+  color: var(--marigold);
   font-family: var(--ff-oxanium);
   font-size: 3rem;
   font-weight: var(--fw-800);
@@ -1198,7 +1188,7 @@ body {
   .cart-badge {
     position: absolute;
     top: 5px;
-    right: -8px;
+    right: -8 px;
     background-color: var(--marigold);
     color: var(--eerie-black-1);
     font-size: var(--fs-11);
