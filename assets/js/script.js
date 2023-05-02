@@ -51,3 +51,18 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+// 
+var notiContent = "";
+fetch('data/data.json')
+  .then(response => response.json())
+  .then(data => {
+    
+    $(".cart-badge").html(data.notifier.length);
+    for(var i = 0; i < data.notifier.length; i++)
+    {
+      console.log(data.notifier[i]);
+      notiContent = notiContent + "<a href="+data.notifier[i].link +" class='noti_line'>"+ data.notifier[i].name +"</a>";
+    }
+    $(".noti").append(notiContent);
+  });

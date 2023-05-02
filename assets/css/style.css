@@ -1754,13 +1754,24 @@ em{
 
 
 
-.noti_card{
+/* .noti_card{
+  background-color: #E9A401;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+} */
+.noti_line{
   background-color: #E9A401;
   color: white;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
 }
+.noti_line:hover{
+  background-color: #e0d1ad;
+}
+
 
 .noti_header{
   font-weight: bold;
