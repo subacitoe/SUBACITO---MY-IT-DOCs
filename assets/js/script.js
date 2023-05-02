@@ -61,7 +61,6 @@ fetch('data/data.json')
     $(".cart-badge").html(data.notifier.length);
     for(var i = 0; i < data.notifier.length; i++)
     {
-      console.log(data.notifier[i]);
       notiContent = notiContent + "<a href="+data.notifier[i].link +" class='noti_line'>"+ data.notifier[i].name +"</a>";
     }
     $(".noti").append(notiContent);
