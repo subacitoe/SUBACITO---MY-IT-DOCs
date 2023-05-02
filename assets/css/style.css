@@ -1,10 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 
 /**
  * copyright 2022 SUBACITO
  */
 
 :root {
+
+--form-shadow: #5861e0;
+--font-size: 14pt;
+--font-face: 'Fjalla One';
+
 
   /**
    * colors
@@ -1692,7 +1697,7 @@ body {
 .path_section{
 }
 .table_code_bagger{
-  width: 95%;
+  /* width: 95%; */
   padding: 20px;
   margin: 25px;
   border-radius: 5px;
@@ -1817,5 +1822,114 @@ em{
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
   }
+
+
 }
+  /* Timer */
+  #clockdiv {
+    border-radius: 5px;
+		text-align: center;
+		background: wheat;
+		color: #000;
+		width: 100%;
+		margin: 50px auto;
+		font-size: 120px;
+		cursor: pointer;
+	}
+  .time_btn{
+    padding: 15px;
+    background: #E9A401;
+    margin: 10px 20px;
+  }
+  .btn_time_wrapper{
+    display: flex;
+    justify-content: center;
+  }
+.input_timer_wrapper{
+  display: flex;
+  justify-content: center;
+}
+input{
+  display: block;
+  width: 100%;
+  font-size: var(--font-size);
+  line-height: var(--font-size) * 2;
+  font-family: var(--font-face);
+  margin-bottom: var(--font-size)* 2;
+  border: none;
+  border-bottom: 5px solid rgb(223, 201, 201);
+  width: 90%;
+  outline: none;
+  color: rgba(0,0,0,1);
+  padding: 5px;
+  margin: 20px;
+}
+
+  
+input:focus{
+  border-bottom: 5px solid var(--form-shadow);
+}
+
+@media only screen and (max-width: 900px) {
+  .input_timer_wrapper, .btn_time_wrapper{
+    flex-direction: column;
+  }
+  #clockdiv{
+    font-size: 10vw;
+  }
+}
+
+/* modal timer */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  text-align: center;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  position: relative;
+  top: -20px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.img_timer{
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.img_timer img{
+  max-width: 60%;
+}
+  
 
