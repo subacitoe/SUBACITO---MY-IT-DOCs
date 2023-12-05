@@ -19,6 +19,10 @@
         {
             "name": "DARK SOUL",
             "link": "./DARKSOUL/index.html"
+        },
+        {
+            "name": "SUPER PEEK",
+            "link": "./SUPERPEEK/index.html"
         }
     ]
     
